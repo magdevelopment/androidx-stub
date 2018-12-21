@@ -1,0 +1,34 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+group='com.github.magdevelopment'
+
+dependencies {
+    // AndroidX
+    compileOnly 'androidx.appcompat:appcompat:1.0.0'
+
+    // Moxy
+    compileOnly 'com.arello-mobile:moxy:1.5.5'
+    compileOnly 'com.arello-mobile:moxy-android:1.5.5'
+
+    // Cicerone
+    compileOnly 'ru.terrakok.cicerone:cicerone:4.0.2'
+}
