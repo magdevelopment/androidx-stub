@@ -5,10 +5,10 @@ android {
     compileSdkVersion 28
 
     defaultConfig {
-        minSdkVersion 18
+        minSdkVersion 14
         targetSdkVersion 28
-        versionCode 2
-        versionName "2.0"
+        versionCode 3
+        versionName "2.1"
     }
 
     buildTypes {
@@ -23,7 +23,7 @@ group='com.github.magdevelopment'
 
 dependencies {
     // AndroidX
-    compileOnly 'androidx.appcompat:appcompat:1.0.0'
+    compileOnly 'androidx.appcompat:appcompat:1.0.2'
 
     // Moxy
     compileOnly 'com.arello-mobile:moxy:1.5.5'
