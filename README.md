@@ -6,7 +6,7 @@ Android X version of some classes.
 ## How to include
 ```gradle
 dependencies {
-    implementation 'com.github.magdevelopment:androidx-stub:2.0'
+    implementation 'com.github.magdevelopment:androidx-stub:2.1'
 }
 ```
 
